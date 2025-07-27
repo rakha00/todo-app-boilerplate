@@ -8,11 +8,12 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
     "format": "prettier --write src"
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
+    "@types/uuid": "^10.0.0",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@typescript-eslint/parser": "^8.38.0",
     "eslint": "^9.32.0",
@@ -23,5 +24,8 @@
     "typescript-eslint": "^8.38.0",
     "vite": "^7.0.4",
     "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
   }
 }

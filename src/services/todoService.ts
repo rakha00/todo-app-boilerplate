@@ -1,8 +1,9 @@
+import { v4 as uuidv4 } from 'uuid';
 import type { Todo } from '../types/todo.types';
 
 export function createTodo(todos: readonly Todo[], text: string): Todo[] {
   const newTodo: Todo = {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     text,
     completed: false,
     createdAt: new Date(),
