@@ -5,7 +5,7 @@ export interface Todo {
   createdAt: Date;
 }
 
-export type FilterStatus = "all" | "active" | "completed";
+export type FilterStatus = 'all' | 'active' | 'completed';
 
 export interface AppState {
   todos: Todo[];
